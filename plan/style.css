@@ -1,0 +1,100 @@
+.finance-banner-container {
+  height: 420px;
+  text-align: center;
+  background: #1d226e;
+}
+.finance-banner-container .container img {
+  object-position: center center;
+  object-fit: contain;
+  width: 100%;
+  max-width: 1140px;
+  line-height: 420px;
+  height: 420px;
+  text-align: center;
+}
+.abs-banner-container {
+  height: 420px;
+  text-align: center;
+  background: #3d71f5;
+}
+.abs-banner-container .container img {
+  object-position: center center;
+  object-fit: contain;
+  width: 100%;
+  max-width: 1140px;
+  line-height: 420px;
+  height: 420px;
+  text-align: center;
+}
+.transaction-banner-container {
+  height: 420px;
+  text-align: center;
+  background: #3e0496;
+}
+.transaction-banner-container .container img {
+  object-position: center center;
+  object-fit: contain;
+  width: 100%;
+  max-width: 1140px;
+  line-height: 420px;
+  height: 420px;
+  text-align: center;
+}
+.content .container .introduction {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.content .container .introduction h2 {
+  font-size: 28px;
+  margin: 40px 0;
+  text-align: center;
+}
+.content .container .introduction .contents {
+  margin-left: 40px;
+  margin-top: 20px;
+}
+.content .container .introduction .contents p {
+  margin-top: 40px;
+  font-weight: 600;
+  color: black;
+}
+.content .container .introduction .contents img {
+  width: 100%;
+  max-width: 1040px;
+  object-position: center center;
+  object-fit: contain;
+}
+.content .container .introduction .contents span {
+  font-size: 16px;
+}
+.banner-container .introduction {
+  color: #fff;
+  line-height: 2;
+  width: 50%;
+  margin-top: 80px;
+}
+.banner-container .introduction h1 {
+  margin-bottom: 10px;
+}
+.middle-area {
+  background: #f5f6f6;
+  margin: 20px 0;
+}
+.middle-area h2 {
+  margin: 30px auto !important;
+  margin-bottom: 0 !important;
+  text-align: center;
+}
+.middle-area img {
+  width: 100%;
+  object-position: center center;
+  object-fit: contain;
+  padding: 30px;
+  padding-top: 0;
+}
+#content .about-w3 {
+  padding: 0;
+}
+.content .about-w3 {
+  padding-top: 0;
+}

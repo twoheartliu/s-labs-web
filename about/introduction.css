@@ -1,0 +1,74 @@
+.content .container #inner-nav ul {
+  border: none !important;
+}
+.content .container .introduction {
+  background: #fff;
+  font-size: 18px;
+  margin: 40px 0;
+}
+.content .container .introduction h2 {
+  font-size: 18px;
+  margin: 40px auto;
+  text-align: center;
+}
+.content .container .introduction .contents {
+  margin: 40px;
+}
+.content .container .introduction .contents p {
+  margin-top: 40px;
+  font-size: 16px;
+  color: #a0a0a0;
+}
+.content .container .introduction .contents p .important {
+  font-weight: 600;
+}
+.banner-container {
+  background: #1d1530;
+  background: linear-gradient(to right, #1d1632 0%, #1d1632 30%, #33274b 81%, #33274b 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1d1632', endColorstr='#33274b', GradientType=1);
+}
+.banner-container #playIcon {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 150px;
+  height: 150px;
+  z-index: 999;
+}
+.banner-container #playIcon:hover {
+  cursor: pointer;
+}
+.banner-container img.play {
+  display: none !important;
+}
+.banner-container img.switch {
+  width: 50px;
+  display: block;
+  position: absolute;
+  right: 2vw;
+  top: 50px;
+  z-index: 9999;
+}
+.banner-container video {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  background: transparent url("../source/video-banner.jpg") no-repeat 0 0;
+  background-size: cover;
+}
+.banner-container .introduction {
+  color: #fff;
+  line-height: 2;
+  width: 50%;
+  margin-top: 80px;
+}
+.banner-container .introduction h1 {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/jquery.flexslider.js"></script>
+    <link rel="stylesheet" href="../../css/public.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../../css/about.css" />
+  </head>
+
+  <body class="iframes" style="background: #fff;">
+    <div class="container" style="background: #fff;">
+      <div class="box">
+        <ul class="event_year">
+          <li class="current">
+            <label for="2019">2019</label>
+          </li>
+          <li><label for="2018">2018</label></li>
+          <li><label for="2017">2017</label></li>
+        </ul>
+        <ul class="event_list">
+          <div>
+            <h3 id="2019">2019</h3>
+            <li>
+              <span>7月</span>
+              <p><span>荣获“厦门市高新技术企业”称号</span></p>
+            </li>
+            <li>
+              <span>3月</span>
+              <p><span>链平方获得国家网信办首批备案号</span></p>
+            </li>
+            <li>
+              <span>2月</span>
+              <p><span>R3发放链平方国内唯一官方合作牌照</span></p>
+            </li>
+            <li>
+              <span>1月</span>
+              <p>
+                <span
+                  >深圳分公司挂牌成立，链平方全国华北、华东、福建、广东四大区域版图确立</span
+                >
+              </p>
+            </li>
+          </div>
+          <div>
+            <h3 id="2018">2018</h3>
+            <li>
+              <span>10月</span>
+              <p><span>链平方与全球区块链巨头R3达成战略合作</span></p>
+            </li>
+            <li>
+              <span>5月</span>
+              <p>
+                <span
+                  >链平方提供的开源代码被Corda官方收录；交付德邦证券区块链系统Everchain落地完成第一个ABS应用场景</span
+                >
+              </p>
+            </li>
+            <li>
+              <span>4月</span>
+              <p>
+                <span
+                  >链平方再获数千万Pre-A轮融资，由九鼎资本领投；公司作为ABS领域唯一优秀案例独家上榜《2018年中国区块链行业应用报告》；链平方与蚂蚁金服、京东金融、360集团等企业共同荣膺“2018中国金融科技创新能力TOP30”奖项</span
+                >
+              </p>
+            </li>
+            <li>
+              <span>3月</span>
+              <p>
+                <span
+                  >2017年度金融科技介甫奖颁奖盛典上，链平方成功斩获“最具价值区块链平台奖”</span
+                >
+              </p>
+            </li>
+          </div>
+          <div>
+            <h3 id="2017">2017</h3>
+            <li>
+              <span>12月</span>
+              <p>
+                <span
+                  >在第三届中国金融科技品牌创新峰会上荣获“金融科技最具竞争力企业奖”</span
+                >
+              </p>
+            </li>
+            <li>
+              <span>8月</span>
+              <p><span>获得旗晖资本与恩厚资本天使轮投资</span></p>
+            </li>
+            <li>
+              <span>5月</span>
+              <p><span>公司正式成立</span></p>
+            </li>
+          </div>
+        </ul>
+
+        <div class="clearfix"></div>
+      </div>
+    </div>
+    <!-- <script>
+      $(function() {
+        if (
+          navigator.userAgent.match(
+            /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+          )
+        ) {
+        } else {
+          $(".about-history-list").flexslider({
+            animation: "slide",
+            slideshow: false,
+            controlNav: false,
+            itemWidth: 253,
+            itemMargin: 31,
+            prevText: "<",
+            nextText: ">",
+            move: 1
+          });
+        }
+      });
+    </script> -->
+    <script>
+      $(function() {
+        $("label").click(function() {
+          $(".event_year>li").removeClass("current");
+          $(this)
+            .parent("li")
+            .addClass("current");
+          var year = $(this).attr("for");
+          $("#" + year)
+            .parent()
+            .prevAll("div")
+            .slideUp(800);
+          $("#" + year)
+            .parent()
+            .slideDown(800)
+            .nextAll("div")
+            .slideDown(800);
+        });
+      });
+    </script>
+    <div style="text-align:center;clear:both"></div>
+  </body>
+</html>

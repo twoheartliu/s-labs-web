@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>新闻中心-链平方</title>
+    <!---->
+    <script src="../../js/jquery.min.js"></script>
+    <link
+      href="../../css/bootstrap.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link
+      href="../../css/style.css"
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+    />
+    <link rel="stylesheet" href="../../css/swipebox.css" />
+    <!---->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <!---->
+    <script src=" "></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../../js/numscroller-1.0.js"></script>
+    <!---->
+    <link href=" " rel="stylesheet" type="text/css" />
+    <link href=" " rel="stylesheet" type="text/css" />
+    <link href=" " rel="stylesheet" type="text/css" />
+    <!--startsmothscrolling-->
+    <script type="text/javascript" src="../../js/move-top.js"></script>
+    <script type="text/javascript" src="../../js/easing.js"></script>
+
+    <!-- swiper -->
+    <script src="../../js/swiper.min.js"></script>
+    <link rel="stylesheet" href="../../css/swiper.min.css" />
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        /* font-size: 16px; */
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+    </style>
+    <script type="text/javascript">
+      // jQuery(document).ready(function($) {
+      //   $(".scroll").click(function(event) {
+      //     event.preventDefault();
+      //     $("html,body").animate(
+      //       { scrollTop: $(this.hash).offset().top },
+      //       1200
+      //     );
+      //   });
+      // });
+    </script>
+    <!--script-->
+    <script src="../../js/responsiveslides.min.js"></script>
+    <script>
+      $(function() {
+        $('#slider').responsiveSlides({
+          auto: true,
+          nav: true,
+          speed: 500,
+          namespace: 'callbacks',
+          pager: true
+        });
+      });
+    </script>
+    <!-- swipe box js -->
+    <script src="../../js/jquery.swipebox.min.js"></script>
+    <script type="text/javascript">
+      jQuery(function($) {
+        $('.swipebox').swipebox();
+      });
+    </script>
+
+    <!-- //swipe box js -->
+    <link rel="stylesheet" href="../../css/new.css" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="stylesheet" href="../news.css" />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <!--header-->
+    <div class="index">
+      <div class="container">
+        <div class="navigation wow fadeInLeft animated" data-wow-delay=".5s">
+          <nav class="navbar navbar-default">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle collapsed"
+                data-toggle="collapse"
+                data-target="#bs-example-navbar-collapse-1"
+              >
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse nav-wil nav-class"
+              id="bs-example-navbar-collapse-1"
+            >
+              <a href="../../index.html"
+                ><img
+                  src="../../source/链平方logo2.png"
+                  style="height: 70px;margin-top: 5px;margin-right: 130px; object-position: center center;object-fit: cover;float: left;"
+                  alt="logo"
+                  class="scroll"
+              /></a>
+
+              <ul class="nav navbar-nav navbar-right link-effect">
+                <li><a href="../../index.html" class="scroll">首页 </a></li>
+                <li>
+                  <a href="javascript:;" class="scroll">解决方案</a>
+                  <ul>
+                    <li>
+                      <a href="../../plan/finance.html">供应链金融</a>
+                    </li>
+                    <li>
+                      <a href="../../plan/abs.html">资产证券化</a>
+                    </li>
+                    <li>
+                      <a href="../../plan/transaction.html">资产管理</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;" class="scroll">产品服务</a>
+                  <ul>
+                    <li>
+                      <a href="../../service/riskControl.html">大数据风控</a>
+                    </li>
+                    <li>
+                      <a href="../../service/afterLoan.html">贷后管理平台</a>
+                    </li>
+                    <li>
+                      <a href="../../service/upstream.html">上游资金管理</a>
+                    </li>
+                    <li>
+                      <a href="../../service/coreCompany.html"
+                        >核心企业信用传递</a
+                      >
+                    </li>
+                    <li>
+                      <a href="../../service/orderLoan.html">区块链订单贷</a>
+                    </li>
+                    <li>
+                      <a href="../../service/propertyManagement.html"
+                        >资产管理平台</a
+                      >
+                    </li>
+                    <li>
+                      <a href="http://ncp.s-labs.cn">农产品区块链溯源</a>
+                    </li>
+                    <li>
+                      <a href="http://cv.s-labs.cn/">公益上链平台</a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="javascript:;" class="scroll">关于链平方</a>
+                  <ul>
+                    <li>
+                      <a href="../introduction.html">企业介绍</a>
+                    </li>
+                    <li>
+                      <a href="../news.html">新闻中心</a>
+                    </li>
+                    <li>
+                      <a href="../contact.html">联系我们</a>
+                    </li>
+                    <li>
+                      <a href="../join.html">加入我们</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+          </nav>
+        </div>
+      </div>
+      <!-- Swiper -->
+      <div class="swiper-container" id="swiper_container">
+        <div class="news-banner-container">
+          <img
+            src="../../source/Desktop/关于我们——新闻中心@凡科快图 (2).jpg"
+            alt=""
+          />
+          <div class="container"></div>
+          <div class="about-w3 banners" id="about"></div>
+        </div>
+        <!-- <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img
+              src="../../source/轮播图1.jpg"
+              alt=""
+              style="width:100vw;height: 500px;object-position: center center;
+                object-fit: cover;"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../../source/轮播图2.jpg"
+              alt=""
+              class="img"
+              style="width:100vw;height: 500px;object-position: center center;
+                object-fit: cover;"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="../../source/轮播图3.jpg"
+              alt=""
+              class="img"
+              style="width:100vw;height: 500px;object-position: center center;
+                object-fit: cover;"
+            />
+          </div> -->
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+      <!-- Add Arrows -->
+      <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+    </div>
+    <!-- </div> -->
+    <div class="content">
+      <!--about-->
+      <div class="about-w3" id="about">
+        <div class="container">
+          <div class="article-details">
+            <header>
+              <div class="desc">活动报道</div>
+              <div class="right">
+                <h2>链平方周淼：金融科技切忌因小失大、因噎废食</h2>
+                <div class="time">2019-08-29</div>
+              </div>
+            </header>
+            <main>
+              <p class="">
+                8月22日，央行发布了《金融科技（FinTech）发展规划（2019-2021年）》（以下简称《规划》），这是央行针对金融科技的第一个顶层规划，对行业影响深远。
+                零壹财经推出“央行金融科技发展规划解读”专题，邀请金融科技领域专家及相关机构进行系列解读。链平方CEO周淼作为受邀嘉宾之一，对此次《规划》进行了全面的解读。
+              </p>
+              <section>
+                <p class="bold">
+                  Q :
+                  您觉得《金融科技（FinTech）发展规划（2019-2021年）》，对金融科技行业将有什么影响和意义？
+                </p>
+                <p>
+                  此次《规划》是中央第一次真正意义上出台关于金融科技领域的发展规划，给予金融科技确切的定义，规划出明确的发展路径，同时为未来的发展指明了方向，对于金融科技未来的发展有着非常深远的促进意义。
+                </p>
+              </section>
+
+              <section>
+                <p class="bold">
+                  Q :
+                  在《规划》中，您最关注的是哪些内容？对哪些细分领域影响会最大？
+                </p>
+                <p>
+                  我最关注的是两个部分：中小微企业的融资难和监管科技；对中小微企业金融信用的建立和真实动态数据进行贷后管理这两个细分领域影响最大。
+                </p>
+              </section>
+
+              <section>
+                <p class="bold">
+                  Q : 《规划》的发布，对于您公司的业务会有哪些影响？
+                </p>
+                <p>
+                  中小微企业的融资难题和运用真实动态的数据进行贷后管理这两个部分，在《规划》中得到充分肯定，我司目前已经开展相关业务，我们会坚定不移地支持国家金融科技领域的建设，模块化、精细化、系统化地持续开展业务，对已形成的产品进行更大力度的推广，全力积极配合央行《金融科技规划》的发展计划。
+                </p>
+              </section>
+
+              <section>
+                <p class="bold">
+                  Q :
+                  《规划》中并未明确提及区块链，而提到了分布式数据库，您认为这是为什么？这两者是什么关系？
+                </p>
+                <p>
+                  之前有人利于区块链技术作为噱头，在国家禁止的情况下发币，造成了对去区块链技术的一些负面影响，所以此次在《规划》中未提及敏感字眼，也是体现政策的延续性。
+                  <br />
+                  但是分布式数据库本身就是区块链的核心技术之一，从《规划》中完全可以看出，央行对技术进行了深入研究，并专注于技术核心和本质应用，而不是流于浮夸。分布式数据库，在运用上不仅是区块链技术一种，但是区块链可能性最大。
+                  <br />
+                  我们根据分布式数据库的技术特性，正在为人行下属的金融相关协会，积极开发相应应用。
+                </p>
+              </section>
+
+              <section>
+                <p class="bold">
+                  Q : 您预期，接下来两三年金融科技会有哪些发展趋势？
+                </p>
+                <p>
+                  第一，更开放：对金融科技的研究和应用会更加深入和广泛
+                  <br />
+                  第二，开源：底层技术各有千秋，随着更多底层技术自身条件的成熟，把开源代码公布，被更多的使用者使用，进而造福整个社会，从而达到真正用科技赋能金融。
+                  <br />
+                  第三，技术上，切记因小失大，因噎废食。
+                  <br />
+                  因小失大：技术不能颠覆金融行业，只能赋能金融，单一技术无法改善金融场景，不能为了创新去发展技术，而是运用科学技术更好的发展金融行。
+                  <br />
+                  因噎废食：科学技术可以在可控范围内试运行，不能因为一些预期可能出现的风险，而放弃技术在金融行业的尝试。
+                </p>
+              </section>
+            </main>
+          </div>
+        </div>
+      </div>
+      <!--about-->
+      <!--services-->
+    </div>
+    <div class="footer" id="contact">
+      <div class="container">
+        <div class="footer-top">
+          <div class="col-md-3 footer-left">
+            <h4>产品服务</h4>
+            <p>
+              <a href="../../service/riskControl.html">大数据风控</a>
+            </p>
+            <p>
+              <a href="../../service/afterLoan.html">贷后管理平台</a>
+            </p>
+            <p>
+              <a href="../../service/upstream.html">上游资金管理</a>
+            </p>
+            <p>
+              <a href="../../service/propertyManagement.html">资产管理平台</a>
+            </p>
+            <p>
+              <a href="../../service/orderLoan.html">区块链订单贷</a>
+            </p>
+            <p>
+              <a href="../../service/coreCompany.html">核心企业信用传递</a>
+            </p>
+            <p>
+              <a href="http://ncp.s-labs.cn">农产品区块链溯源</a>
+            </p>
+            <p>
+              <a href="http://cv.s-labs.cn">公益上链平台</a>
+            </p>
+          </div>
+          <div class="col-md-3 footer-left">
+            <h4>解决方案</h4>
+            <p>
+              <a href="../../plan/abs.html">资产证券化</a>
+            </p>
+            <p>
+              <a href="../../plan/transaction.html">资产管理</a>
+            </p>
+            <p>
+              <a href="../../plan/finance.html">供应链金融</a>
+            </p>
+          </div>
+          <div class="col-md-2 footer-right">
+            <!-- <h4>微信公众号</h4> -->
+
+            <div style="margin:0 auto; text-align: center;margin-bottom: 30px;">
+              <img
+                src="../../source/footer-logo.png"
+                style="width: 100px;object-position:center center;object-fit: cover;"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-md-3 footer-left">
+            <h4>关于我们</h4>
+            <p>
+              <a href="../introduction.html">企业介绍</a>
+            </p>
+            <p>
+              <a href="../news.html">新闻中心</a>
+            </p>
+            <p>
+              <a href="../contact.html">联系我们</a>
+            </p>
+            <p>
+              <a href="../join.html">加入我们</a>
+            </p>
+          </div>
+
+          <div class="col-md-2 footer-right">
+            <h4>联系我们</h4>
+            <div style="width: 100%;" class="contactMe">
+              <p>
+                电话：010-84722501
+              </p>
+              <p>
+                邮箱：info@s-labs.cn
+              </p>
+              <p>
+                地址：北京市朝阳区南湖东园122号博泰国际B座18层
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="qr-code">
+            <div style="width: 100%;text-align: center;">
+              <img
+                src="../../source/QR-code.jpeg"
+                style="width: 100px;object-position: center center;object-fit: cover;"
+                alt=""
+              />
+            </div>
+            <div style="margin: 0 auto;text-align: center;" class="qr-content">
+              <p>关注链平方</p>
+              <p>微信公众号</p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-text">
+          <p>
+            Copyright &copy; 2020 S-labs. All Rights Reserved.&nbsp;&nbsp;<a
+              href="http://www.beian.miit.gov.cn"
+              >京ICP备19047113号-1</a
+            >
+          </p>
+        </div>
+        <div class="video-container">
+          <img
+            src="../../source/close.svg"
+            alt=""
+            class="video-control noplay"
+          />
+          <div id="video">
+            <video preload="auto" poster="" class="noplay" controls>
+              <source src="../../source/video/v1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        /*
+        var defaults = {
+              containerID: 'home', // fading element id
+            containerHoverID: 'toTopHover', // fading element hover id
+            scrollSpeed: 1200,
+            easingType: 'linear'
+         };
+        */
+
+        $().UItoTop({ easingType: 'easeOutQuart' });
+      });
+    </script>
+    <a href="#" id="home" style="display: block;">
+      <span id="toTopHover" style="opacity: 1;"> </span
+    ></a>
+
+    <div class="modal fade" id="myModal1" tabindex="-1" role="dialog">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content modal-info">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <!-- <div class="modal-body">
+            <div class="news-gr">
+              <img src="images/j.jpg" class="img-responsive" alt="" />
+              <h3 class="tittle">Pecuniary</h3>
+              <p>
+                Nam aliquam pretium feugiat. Duis sem est, viverra eu interdum
+                ac, suscipit nec mauris. Suspendisse commodo tempor sagittis! In
+                justo est, sollicitudin eu scelerisque pretium, placerat eget
+                elit. Praesent faucibus rutrum odio at rhoncus. Pel ermentum
+                pretium. Maecenas ac lacus ut neque rhoncus laoreet sed id
+                tellus. Donec justo tellus.
+              </p>
+              <p>
+                Nam aliquam pretium feugiat. Duis sem est, viverra eu interdum
+                ac, suscipit nec mauris. Suspendisse commodo tempor sagittis! In
+                justo est, sollicitudin eu scelerisque pretium, placerat eget
+                elit. Praesent faucibus rutrum odio at rhoncus. Pel ermentum
+                pretium. Maecenas ac lacus ut neque rhoncus laoreet sed id
+                tellus. Donec justo tellus.
+              </p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Initialize Swiper -->
+    <script>
+      // var swiper = new Swiper(".swiper-container", {
+      //   spaceBetween: 30,
+      //   centeredSlides: true,
+      //   autoplay: true,
+      //   pagination: {
+      //     el: ".swiper-pagination",
+      //     clickable: true
+      //   },
+      //   navigation: {
+      //     nextEl: ".swiper-button-next",
+      //     prevEl: ".swiper-button-prev"
+      //   }
+      // });
+      /*鼠标移入停止轮播，鼠标离开 继续轮播*/
+      // var comtainer = document.getElementById('swiper_container');
+      // var video = document.querySelector('video');
+      // console.log('video', video.playing);
+      // comtainer.onclick = function () {
+      // 	console.log('mouse enter')
+      // 	swiper.autoplay = !(swiper.autoplay);
+      // };
+      // comtainer.onmouseleave = function () {
+      // 	console.log('mouse leave')
+      // 	swiper.autoplay = true;
+      // }
+    </script>
+  </body>
+</html>

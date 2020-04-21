@@ -1,0 +1,133 @@
+* {
+  border: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+.banner-container {
+  height: 420px;
+  background: #1565c0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: url(../source/plan/供应链金融banner.png) center center, linear-gradient(150deg, #1565c0, #1468c3, #0f71cc, #0881da, #0091ea);
+  background-position: 50% 50%;
+}
+.content .introduction .list {
+  min-width: 1040px;
+  display: flex;
+  flex-flow: column wrap;
+}
+.content .introduction .list .list-cell {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+  border-bottom: 1px solid #d8d8d8;
+}
+.content .introduction .list .list-cell img {
+  height: 200px;
+  width: 500px;
+  object-position: center center;
+  object-fit: cover;
+}
+.content .introduction .list .list-cell article {
+  height: 200px;
+  width: 500px;
+  display: flex;
+  flex-flow: column wrap;
+  font-size: 14px;
+}
+.content .introduction .list .list-cell article .title {
+  width: 500px;
+  height: 50px;
+  padding-top: 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.content .introduction .list .list-cell article .content {
+  width: 500px;
+  height: 100px;
+}
+.content .introduction .list .list-cell article footer {
+  display: flex;
+  flex-flow: row wrap;
+  height: 50px;
+  padding-top: 30px;
+}
+.content .introduction .list .list-cell article footer .time {
+  width: 300px;
+  color: #6a7599;
+}
+.content .introduction .list .list-cell article footer .detail {
+  width: 200px;
+  display: flex;
+  justify-content: flex-end;
+}
+.banner-container .introduction {
+  color: #fff;
+  line-height: 2;
+  width: 50%;
+  margin-top: 80px;
+}
+.banner-container .introduction h1 {
+  margin-bottom: 10px;
+}
+.container .article-details {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 1170px;
+}
+.container .article-details header {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 30px;
+  width: 100%;
+  height: 86px;
+  display: flex;
+  flex-flow: row wrap;
+}
+.container .article-details header .desc {
+  width: 56px;
+  height: 56px;
+  background: #1c4ce6;
+  font-size: 19px;
+  text-align: center;
+  color: #fff;
+}
+.container .article-details header .right {
+  margin-left: 25px;
+}
+.container .article-details header .right h2 {
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  max-width: 1000px;
+}
+.container .article-details header .right .time {
+  width: 100px;
+  height: 26px;
+  line-height: 26px;
+}
+.container .article-details main {
+  width: 100%;
+  margin: 20px 0;
+  line-height: 2;
+  font-size: 15px;
+}
+.container .article-details main .bold {
+  font-weight: 500;
+  color: #121212;
+}
+.container .article-details main section {
+  margin: 10px 0;
+}
+.container .article-details main section p {
+  margin: 5px;
+}
+.container .article-details div.img {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.container .article-details div.img img {
+  object-position: center center;
+  object-fit: contain;
+  width: 500px;
+}
